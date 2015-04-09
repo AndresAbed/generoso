@@ -7891,7 +7891,7 @@ button.close {
 .fa-bomb:before {
   content: "\f1e2";
 }
-@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
+@import url(//fonts.googleapis.com/css?family=Alfa+Slab+One);
 
 body{
   background-color: #b7e2ec;
