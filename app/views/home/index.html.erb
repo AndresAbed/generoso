@@ -6,7 +6,7 @@
     </div>
     <div class="raw">
       <% if current_user %>
-        <img class="profile-img" src="<%= current_user.largeimage %>"><br>
+        <img class="profile-img" src="<%= current_user.image(size: :large) %>"><br>
         <span class="thanks">Gracias <strong><%= current_user.name.partition(' ').first %></strong>!</span><br>
         <span class="beta-msg">Tus datos quedan registrados para participar en la beta</span>
         <!--<%= link_to "Sign out", signout_path, id: "sign_out" %>-->

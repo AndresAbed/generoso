@@ -9,7 +9,8 @@ class User < ActiveRecord::Base
       user.save
     end
   end
-  def largeimage
-  "http://graph.facebook.com/#{self.uid}/picture?type=large"
+
+  def image params={}
+    "http://graph.facebook.com/#{uid}/picture?type=#{params[:size].to_s}"
   end
 end
