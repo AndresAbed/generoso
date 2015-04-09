@@ -7891,7 +7891,6 @@ button.close {
 .fa-bomb:before {
   content: "\f1e2";
 }
-@import url(//fonts.googleapis.com/css?family=Alfa+Slab+One);
 
 body{
   background-color: #b7e2ec;
@@ -7903,14 +7902,14 @@ body{
 }
 
 .title{
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Alfa Slab One';
   font-size: 100pt;
   color: white;
   line-height: 110px;
 }
 
 .subtitle{
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Alfa Slab One';
   color: white;
   font-size: 20pt;
 }
