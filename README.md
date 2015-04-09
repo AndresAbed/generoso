@@ -1,2 +1,2 @@
-# generoso.org.ar
+# generoso.me
 Solidarity campaigns and volunteers manager
