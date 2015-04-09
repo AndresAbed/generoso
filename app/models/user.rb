@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  def image params={}
+  def picture_url params={}
     "http://graph.facebook.com/#{uid}/picture?type=#{params[:size].to_s}"
   end
 end
