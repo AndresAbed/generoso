@@ -7,7 +7,7 @@
     <% if current_user %>
       <div class="container success-msg">
         <div class="col-lg-2">
-          <img class="profile-img" src="<%= current_user.largeimage %>">
+          <img class="profile-img" src="<%= current_user.picture_url(size: :large) %>">
         </div>
         <div class="col-lg-10 text-col-10">
           <span class="thanks">Gracias <strong><%= current_user.name.partition(' ').first %></strong>!</span><br>
