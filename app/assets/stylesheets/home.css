@@ -72,12 +72,15 @@ body{
   color: white;
 }
 
-.macrolab{
+.company{
   position: fixed;
-  bottom: 20px;
-  width: 200px;
+  bottom: 35px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.macrolab{
+  width: 200px;
 }
 
 @media (max-width: 1200px){
