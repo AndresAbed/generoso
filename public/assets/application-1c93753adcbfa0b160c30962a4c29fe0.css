@@ -7931,12 +7931,27 @@ body{
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 35px;
+  margin-top: 60px;
+  height: 50px;
+  font-size: 15pt;
+  padding-top: 10px;
+  transition: all .20s ease-in-out;
 }
 
 .btn-facebook:hover,
 .btn-facebook:focus{
   color: white;
+  transition: all .20s ease-in-out;
+}
+
+.btn-facebook i{
+  padding-top: 8px;
+  border-right: none !important;
+  margin-left: 15px;
+}
+
+.btn-facebook b{
+  margin-left: 20px;
 }
 
 .profile-img{
