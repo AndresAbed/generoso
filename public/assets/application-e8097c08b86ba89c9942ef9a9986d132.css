@@ -7893,7 +7893,7 @@ button.close {
 }
 
 body{
-  background-color: #b7e2ec;
+  background-color: #8CD2F4;
 }
 
 .container{
@@ -7908,10 +7908,22 @@ body{
   line-height: 110px;
 }
 
+.logo{
+  width: 700px;
+}
+
 .subtitle{
   font-family: 'Alfa Slab One';
   color: white;
   font-size: 20pt;
+  margin-top: -30px;
+}
+
+.success-msg{
+  margin-top: 100px; 
+  width: 60%; 
+  padding: 0;
+  padding-left: 90px;
 }
 
 .btn-facebook{
@@ -7929,20 +7941,65 @@ body{
 
 .profile-img{
   border-radius: 110px;
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+
+.text-col-10{
+  text-align: left !important; 
+  padding-left: 50px;
 }
 
 .thanks{
-  font-size: 15pt;
+  font-family: 'Helvetica';
+  font-size: 20pt;
   font-weight: bold;
-  color: #488F99;
+  color: #3C3C3C;
 }
 
 .beta-msg{
-  font-size: 15pt;
+  font-family: 'Helvetica';
+  font-size: 20pt;
   font-weight: bold;
   color: white;
+}
+
+.macrolab{
+  position: fixed;
+  bottom: 20px;
+  width: 200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 1200px){
+  .success-msg{
+    margin-top: 100px;
+    padding-left: 0px !important;
+  }
+  .text-col-10{
+    text-align: center !important;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 800px){
+  .logo{
+    width: 100%;
+  }
+
+  .subtitle{
+    margin-top: -20px;
+  }
+
+}
+
+@media (max-width: 500px){
+  .subtitle{
+    font-size: 18pt;
+    margin-top: -10px;
+  }
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

@@ -13554,14 +13554,6 @@ jQuery(function() {
   $("a[rel~=popover], .has-popover").popover();
   $("a[rel~=tooltip], .has-tooltip").tooltip();
 });
-(function() {
-
-
-}).call(this);
-(function() {
-
-
-}).call(this);
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
