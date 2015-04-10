@@ -10,6 +10,6 @@ class User < ActiveRecord::Base
     end
   end
   def largeimage
-  "http://graph.facebook.com/#{self.uid}/picture?type=large"
+    "http://graph.facebook.com/#{self.uid}/picture?type=large"
   end
 end
