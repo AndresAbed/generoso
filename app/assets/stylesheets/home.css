@@ -59,14 +59,14 @@ body{
 }
 
 .thanks{
-  font-family: 'Helvetica';
+  font-family: 'Exo 2', sans-serif;
   font-size: 20pt;
   font-weight: bold;
   color: #3C3C3C;
 }
 
 .beta-msg{
-  font-family: 'Helvetica';
+  font-family: 'Exo 2', sans-serif;
   font-size: 20pt;
   font-weight: bold;
   color: white;
@@ -109,5 +109,19 @@ body{
   .subtitle{
     font-size: 18pt;
     margin-top: -10px;
+  }
+}
+
+@media (max-height: 600px){
+  .container{
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+@media (max-height: 900px){
+  .container{
+    text-align: center;
+    margin-top: 100px;
   }
 }
