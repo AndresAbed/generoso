@@ -1,21 +1,28 @@
 <body>
   <div class="container">
     <div class="raw">
-      <p class="title">Generoso</p>
-      <p class="subtitle">Where everybody is a volunteer</p>
+      <img class="logo" src="http://s1.postimg.org/lkb7v6iy7/Screen_Shot_2015_04_09_at_9_05_07_PM.png">
+      <p class="subtitle">Donde todos somos voluntarios</p>
     </div>
-    <div class="raw">
-      <% if current_user %>
-        <img class="profile-img" src="<%= current_user.largeimage %>"><br>
-        <span class="thanks">Gracias <strong><%= current_user.name.partition(' ').first %></strong>!</span><br>
-        <span class="beta-msg">Tus datos quedan registrados para participar en la beta</span>
-        <!--<%= link_to "Sign out", signout_path, id: "sign_out" %>-->
-      <% else %>
-        <a href="/auth/facebook" class="btn btn-block btn-social btn-facebook">
-          <i id="sign-in-icons" class="fa fa-facebook"></i>
-          <b>Registrate para la Beta</b>
-        </a>
-      <% end %>
-    </div>
+    <% if current_user %>
+      <div class="container success-msg">
+        <div class="col-lg-2">
+          <img class="profile-img" src="<%= current_user.picture_url(size: :large) %>">
+        </div>
+        <div class="col-lg-10 text-col-10">
+          <span class="thanks">Gracias <strong><%= current_user.name.partition(' ').first %></strong>!</span><br>
+          <span class="beta-msg">Tus datos quedan registrados para participar en la beta</span>
+          <!--<%= link_to "Sign out", signout_path, id: "sign_out" %>-->
+        </div>
+      </div>  
+    <% else %>
+      <a href="/auth/facebook" class="btn btn-block btn-social btn-facebook">
+        <i id="sign-in-icons" class="fa fa-facebook"></i>
+        <b>Registrate para la Beta</b>
+      </a>
+    <% end %>
+  </div>
+  <div >
+    <img class="macrolab" src="https://files.slack.com/files-pri/T043Z6AS9-F04BS1YUT/weblogo_white.png">
   </div>
 </body>
