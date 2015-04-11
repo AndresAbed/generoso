@@ -134,7 +134,7 @@ body{
   }
 }
 
-@media (max-height: 750px){
+@media (max-height: 720px){
   .company{
     display: none;
   }
